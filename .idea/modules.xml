@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/OrderReciever.iml" filepath="$PROJECT_DIR$/OrderReciever.iml" />
+      <module fileurl="file://$PROJECT_DIR$/OrderReciever/OrderReciever-OrderReciever.iml" filepath="$PROJECT_DIR$/OrderReciever/OrderReciever-OrderReciever.iml" />
+    </modules>
+  </component>
+</project>
+
