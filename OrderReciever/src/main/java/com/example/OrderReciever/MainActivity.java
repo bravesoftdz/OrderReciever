@@ -5,22 +5,17 @@ import android.content.ComponentName;
 import android.content.Intent;
 import android.content.ServiceConnection;
 import android.os.Bundle;
-import android.os.Handler;
 import android.os.IBinder;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import java.io.*;
-import java.net.InetAddress;
-import java.net.Socket;
-
 
 /**
  * Created by Sidie88 on 9/15/2014.
  */
-public class MainActivity extends Activity{
+public class MainActivity extends Activity {
     TextView textView1;
     EditText editIP;
     boolean mBounded;
@@ -37,7 +32,7 @@ public class MainActivity extends Activity{
 
     }
 
-    public void onClickCon(View v){
+    public void onClickCon(View v) {
         try {
             String ip = editIP.getText().toString();
 
@@ -54,27 +49,27 @@ public class MainActivity extends Activity{
         }
     }
 
-    public void onClickSend(View v){
+    public void onClickSend(View v) {
 
         mServer.onClickSend();
     }
 
-ServiceConnection mConnection = new ServiceConnection() {
+    ServiceConnection mConnection = new ServiceConnection() {
 
-    @Override
-    public void onServiceDisconnected(ComponentName name) {
-        Toast.makeText(getBaseContext(), "Service is disconnected", Toast.LENGTH_LONG).show();
-        mBounded = false;
-        mServer = null;
-    }
+        @Override
+        public void onServiceDisconnected(ComponentName name) {
+            Toast.makeText(getBaseContext(), "Service is disconnected", Toast.LENGTH_LONG).show();
+            mBounded = false;
+            mServer = null;
+        }
 
-    public void onServiceConnected(ComponentName name, IBinder service) {
-        Toast.makeText(getBaseContext(), "Service is connected", Toast.LENGTH_LONG).show();
-        mBounded = true;
-        ClientService.LocalBinder mLocalBinder = (ClientService.LocalBinder)service;
-        mServer = mLocalBinder.getClientServiceInstance();
-    }
-};
+        public void onServiceConnected(ComponentName name, IBinder service) {
+            Toast.makeText(getBaseContext(), "Service is connected", Toast.LENGTH_LONG).show();
+            mBounded = true;
+            ClientService.LocalBinder mLocalBinder = (ClientService.LocalBinder) service;
+            mServer = mLocalBinder.getClientServiceInstance();
+        }
+    };
 
 //    public class ClientThread implements Runnable {
 //
