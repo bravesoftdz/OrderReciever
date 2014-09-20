@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="2" >
+
+    <dataSet config="main" >
+        <source path="C:\Users\Sidie88\AndroidstudioProjects\OrderReciever\OrderReciever\src\main\res" >
+            <file
+                name="icon"
+                path="C:\Users\Sidie88\AndroidstudioProjects\OrderReciever\OrderReciever\src\main\res\drawable\icon.png"
+                qualifiers=""
+                type="drawable" />
+            <file
+                name="ic_stat_order"
+                path="C:\Users\Sidie88\AndroidstudioProjects\OrderReciever\OrderReciever\src\main\res\drawable-hdpi\ic_stat_order.png"
+                qualifiers="hdpi-v4"
+                type="drawable" />
+            <file
+                name="ic_stat_order"
+                path="C:\Users\Sidie88\AndroidstudioProjects\OrderReciever\OrderReciever\src\main\res\drawable-hdpi-v11\ic_stat_order.png"
+                qualifiers="hdpi-v11"
+                type="drawable" />
+            <file
+                name="ic_stat_order"
+                path="C:\Users\Sidie88\AndroidstudioProjects\OrderReciever\OrderReciever\src\main\res\drawable-hdpi-v9\ic_stat_order.png"
+                qualifiers="hdpi-v9"
+                type="drawable" />
+            <file
+                name="ic_stat_order"
+                path="C:\Users\Sidie88\AndroidstudioProjects\OrderReciever\OrderReciever\src\main\res\drawable-mdpi\ic_stat_order.png"
+                qualifiers="mdpi-v4"
+                type="drawable" />
+            <file
+                name="ic_stat_order"
+                path="C:\Users\Sidie88\AndroidstudioProjects\OrderReciever\OrderReciever\src\main\res\drawable-mdpi-v11\ic_stat_order.png"
+                qualifiers="mdpi-v11"
+                type="drawable" />
+            <file
+                name="ic_stat_order"
+                path="C:\Users\Sidie88\AndroidstudioProjects\OrderReciever\OrderReciever\src\main\res\drawable-mdpi-v9\ic_stat_order.png"
+                qualifiers="mdpi-v9"
+                type="drawable" />
+            <file
+                name="ic_stat_order"
+                path="C:\Users\Sidie88\AndroidstudioProjects\OrderReciever\OrderReciever\src\main\res\drawable-xhdpi\ic_stat_order.png"
+                qualifiers="xhdpi-v4"
+                type="drawable" />
+            <file
+                name="ic_stat_order"
+                path="C:\Users\Sidie88\AndroidstudioProjects\OrderReciever\OrderReciever\src\main\res\drawable-xhdpi-v11\ic_stat_order.png"
+                qualifiers="xhdpi-v11"
+                type="drawable" />
+            <file
+                name="ic_stat_order"
+                path="C:\Users\Sidie88\AndroidstudioProjects\OrderReciever\OrderReciever\src\main\res\drawable-xhdpi-v9\ic_stat_order.png"
+                qualifiers="xhdpi-v9"
+                type="drawable" />
+            <file
+                name="ic_stat_order"
+                path="C:\Users\Sidie88\AndroidstudioProjects\OrderReciever\OrderReciever\src\main\res\drawable-xxhdpi\ic_stat_order.png"
+                qualifiers="xxhdpi-v4"
+                type="drawable" />
+            <file
+                name="ic_stat_order"
+                path="C:\Users\Sidie88\AndroidstudioProjects\OrderReciever\OrderReciever\src\main\res\drawable-xxhdpi-v11\ic_stat_order.png"
+                qualifiers="xxhdpi-v11"
+                type="drawable" />
+            <file
+                name="ic_stat_order"
+                path="C:\Users\Sidie88\AndroidstudioProjects\OrderReciever\OrderReciever\src\main\res\drawable-xxhdpi-v9\ic_stat_order.png"
+                qualifiers="xxhdpi-v9"
+                type="drawable" />
+            <file
+                name="activity_cancel_order"
+                path="C:\Users\Sidie88\AndroidstudioProjects\OrderReciever\OrderReciever\src\main\res\layout\activity_cancel_order.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="activity_processing_order"
+                path="C:\Users\Sidie88\AndroidstudioProjects\OrderReciever\OrderReciever\src\main\res\layout\activity_processing_order.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="main"
+                path="C:\Users\Sidie88\AndroidstudioProjects\OrderReciever\OrderReciever\src\main\res\layout\main.xml"
+                qualifiers=""
+                type="layout" />
+            <file
+                name="activity_main"
+                path="C:\Users\Sidie88\AndroidstudioProjects\OrderReciever\OrderReciever\src\main\res\menu\activity_main.xml"
+                qualifiers=""
+                type="menu" />
+            <file
+                name="order_done"
+                path="C:\Users\Sidie88\AndroidstudioProjects\OrderReciever\OrderReciever\src\main\res\menu\order_done.xml"
+                qualifiers=""
+                type="menu" />
+            <file
+                name="processing_order"
+                path="C:\Users\Sidie88\AndroidstudioProjects\OrderReciever\OrderReciever\src\main\res\menu\processing_order.xml"
+                qualifiers=""
+                type="menu" />
+            <file
+                path="C:\Users\Sidie88\AndroidstudioProjects\OrderReciever\OrderReciever\src\main\res\values\dimens.xml"
+                qualifiers="" >
+                <dimen name="activity_vertical_margin" >16dp
+                </dimen>
+                <dimen name="activity_horizontal_margin" >16dp
+                </dimen>
+            </file>
+            <file
+                path="C:\Users\Sidie88\AndroidstudioProjects\OrderReciever\OrderReciever\src\main\res\values\strings.xml"
+                qualifiers="" >
+                <string name="hello_world" >Hello world!
+                </string>
+                <string name="menu_settings" >Setting
+                </string>
+                <string name="title_activity_order_done" >OrderDone
+                </string>
+                <string name="action_settings" >Settings
+                </string>
+                <string name="app_name" >Order Receiver
+                </string>
+                <string name="ipServer" >IP Server
+                </string>
+                <string name="title_activity_processing_order" >Processing Order
+                </string>
+            </file>
+            <file
+                path="C:\Users\Sidie88\AndroidstudioProjects\OrderReciever\OrderReciever\src\main\res\values-w820dp\dimens.xml"
+                qualifiers="w820dp-v13" >
+                <dimen name="activity_horizontal_margin" >64dp
+                </dimen>
+            </file>
+        </source>
+        <source path="C:\Users\Sidie88\AndroidstudioProjects\OrderReciever\OrderReciever\build\generated\res\rs\debug" />
+        <source path="C:\Users\Sidie88\AndroidstudioProjects\OrderReciever\OrderReciever\build\generated\res\generated\debug" />
+    </dataSet>
+    <dataSet config="debug" >
+        <source path="C:\Users\Sidie88\AndroidstudioProjects\OrderReciever\OrderReciever\src\debug\res" />
+    </dataSet>
+
+</merger>

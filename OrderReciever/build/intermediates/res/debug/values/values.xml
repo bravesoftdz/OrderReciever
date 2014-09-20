@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- From: file:/C:/Users/Sidie88/AndroidstudioProjects/OrderReciever/OrderReciever/src/main/res/values/dimens.xml -->
+    <eat-comment />
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <!-- From: file:/C:/Users/Sidie88/AndroidstudioProjects/OrderReciever/OrderReciever/src/main/res/values/strings.xml -->
+    <eat-comment />
+
+    <string name="action_settings">Settings</string>
+    <string name="app_name">Order Receiver</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="ipServer">IP Server</string>
+    <string name="menu_settings">Setting</string>
+    <string name="title_activity_order_done">OrderDone</string>
+    <string name="title_activity_processing_order">Processing Order</string>
+
+</resources>
