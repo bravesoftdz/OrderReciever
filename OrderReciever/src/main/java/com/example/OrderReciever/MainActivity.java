@@ -51,7 +51,7 @@ public class MainActivity extends Activity {
 
     public void onClickSend(View v) {
 
-        mServer.onClickSend();
+        mServer.onClickSend("Feedback");
     }
 
     ServiceConnection mConnection = new ServiceConnection() {

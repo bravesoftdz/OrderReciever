@@ -115,7 +115,7 @@ public class ClientService extends Service {
                                 public void run() {
                                     if (strReceived.startsWith("ORDER")) {
                                         String[] split = strReceived.split("#");
-                                        createNotify(split[1].toString(), split[2].toString(), split[3].toString(), split[4].toString());
+                                        createNotify(split[1].toString(), split[2].toString(), split[3].toString(), split[4].toString(), split[5].toString());
                                     }
                                 }
                             });
@@ -178,7 +178,7 @@ public class ClientService extends Service {
         }
 
         @SuppressWarnings("deprecation")
-        public void createNotify(String noTable, String idMember, String idProduct, String note) {
+        public void createNotify(String noTable, String idMember, String idProduct, String note, String uniqueId) {
             try {
 //                String title = "New Cooking Order";
                 String subject = String.format("Table No. %s", noTable);
@@ -187,11 +187,13 @@ public class ClientService extends Service {
 //                Notification notify = new Notification(android.R.drawable.
 //                        stat_notify_more, title, System.currentTimeMillis());
                 Intent process = new Intent(getBaseContext(), ProcessingOrder.class);
+                process.putExtra("UNIQUE_ID", uniqueId);
                 PendingIntent pIntentProcess = PendingIntent.getActivity(
                         getBaseContext(), 0, process, 0);
 
-                Intent cancel = new Intent(getBaseContext(), CancelOrder.class);
                 Uri alarmSound = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
+                Intent cancel = new Intent(getBaseContext(), CancelOrder.class);
+                cancel.putExtra("UNIQUE_ID", uniqueId);
                 PendingIntent pIntentCancel = PendingIntent.getActivity(
                         getBaseContext(), 0, cancel, 0);
                 Notification notify = new Notification.Builder(getBaseContext())
@@ -214,8 +216,8 @@ public class ClientService extends Service {
 
     }
 
-    public void onClickSend() {
-        printWriter.println("Feedback");
+    public void onClickSend(String data) {
+        printWriter.println(data);
     }
 
 

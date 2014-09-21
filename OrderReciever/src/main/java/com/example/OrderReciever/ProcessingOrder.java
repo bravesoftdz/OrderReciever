@@ -53,8 +53,10 @@ public class ProcessingOrder extends Activity {
     }
 
     public void onClickSend(View v) {
+        Bundle extras = getIntent().getExtras();
+        String unique = extras.getString("UNIQUE_ID");
 
-        mServer.onClickSend();
+        mServer.onClickSend(String.format("NOTIFY#%s/", unique));
     }
 
     ServiceConnection mConnection = new ServiceConnection() {
